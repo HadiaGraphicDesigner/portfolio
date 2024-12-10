@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar-style */
+#navbar-style{
+    /* background-color: #5EA4DF; */
+    height: 60px;
+}
+/* navbar-style */
+
+/* logo */
+#hadia-logo{
+width: 150px;
+height: 40px;
+}
+/* logo */
+
+/* fade-out */
+#fade-out{
+    animation: fade-out 2s linear infinite alternate;
+}
+@keyframes fade-out{
+    from{
+        transition: all 34s;
+        opacity: 1;
+    }
+    to{
+        transition: all 34s;
+        opacity: 0;
+    }
+}
+/* fade-out */
+
+#ELEGANCE{
+    font-size: 100px;
+}
+@media screen and (max-width: 767px) {
+    #ELEGANCE{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 404px) {
+    #ELEGANCE{
+        font-size: 50px;
+    }
+
+}
+/* From Uiverse.io by garerim */ 
+.input {
+    margin: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: lightgray;
+  }
+
+  /* about-section */
+#about-cols-4{
+    width: 100%;
+    height: 100px;
+    border: 1px solid none;
+    border-radius: 8px;
+}
+
+.about-content{
+  font-size: 12px;
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.about-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .about-card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .about-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .about-card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .about-card:hover .about-card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .about-card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .about-card:hover svg {
+    scale: 0;
+  }
+  
+  .about-card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+
+  /* about-section */
+
+  /* hadia-img-about */
+
+  #hadia-img-about{
+    height: 400px;
+    border-radius: 23px;
+  }
+  @media screen and (max-width: 984px) {
+    #hadia-img-about{
+        margin-top: 30px;
+    }
+  }
+
+  /* hadia-img-about */
+
+  /* service-section */
+/* From Uiverse.io by fitoooorkjgod */ 
+.servive-card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.servive-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #ab9e60 0%, #ab9e60 100%);
+  z-index: -10;
+  justify-content: center;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.servive-card::after {
+  content: "";
+  z-index: -1;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #ab9e60 0%, #ab9e60 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.servive-heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.servive-card p:not(.heading) {
+  font-size: 14px;
+}
+
+.servive-card p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.servive-card:hover::after {
+  filter: blur(30px);
+}
+
+.servive-card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+  /* service-section */
+
+  /* resume-section */
+ /* ball-div */
+ #ball-div{
+  width: 20px; 
+  height: 20px;
+  border: 3px solid gold; 
+  border-radius: 50%; 
+}
+#ball-div-line{
+  border-left: 2px solid gold;
+}
+ /* ball-div */
+  /* resume-section */
+
+  /* logo-col-style */
+  #logo-col-style{
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    height: 150px;
+    animation: logo-col-style  1s linear infinite alternate;
+  }
+  @keyframes logo-col-style{
+    from{
+      border-color: black;
+    }
+    to{
+      border-color: lightgray;
+    }
+  }
+  /* logo-col-style */
+
+  /* footter-section */
+
+#contact-info-set{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 8px;
+  background-color: rgb(7, 10, 10);
+  animation:  1s contact-divs linear infinite alternate;
+}
+@keyframes contact-divs {
+  from{
+    background-color: rgb(7, 10, 10);
+    transition: all 34s;
+  }
+  to{
+    transition: all 34s;
+    background-color: black;
+  }
+}
+
+  /* footter-section */
+
+  /* contacts-us-section */
+   /* From Uiverse.io by PriyanshuGupta28 */ 
+.email-card {
+  height: 20rem;
+  width: 230px;
+  background: lightgrey;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.5s ease-in-out;
+}
+
+.email-heading {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 1rem;
+  font-size: large;
+}
+
+.email-input-div {
+  display: flex;
+  margin-top: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.email-card input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 12rem;
+  padding: 8px;
+  outline: none;
+}
+
+.email-button-div {
+  text-align: center;
+}
+
+.email-submit {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 8px 3rem;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: black;
+  color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer
+}
+
+.email-submit:hover {
+  box-shadow: rgba(44, 43, 43, 0.664) 5px 5px, rgba(45, 45, 45, 0.3) 10px 10px, rgba(60, 59, 59, 0.2) 15px 15px, rgba(54, 53, 53, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.email-card input::placeholder {
+  color: black;
+}
+
+.email-input:focus {
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.email-input:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+  /* contacts-us-section */
